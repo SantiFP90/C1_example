@@ -755,17 +755,6 @@
         const playerName = document.getElementById("playerName").value.trim();
 
         if (!playerName) {
-          const input = document.getElementById("playerName");
-          input.style.borderColor = "#ff4444";
-          input.style.animation = "shake 0.5s ease-in-out";
-          input.placeholder = "⚠️ Por favor ingresa tu nombre";
-
-          setTimeout(() => {
-            input.style.borderColor = "#FFD700";
-            input.style.animation = "";
-            input.placeholder = "👤 Ingresa tu nombre para comenzar";
-          }, 2000);
-
           return;
         }
 
